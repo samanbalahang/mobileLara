@@ -1,0 +1,187 @@
+.slider {
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 3px;
+}
+
+.range-slider {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+}
+.range-slider .rangeValues {
+    display: block;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    border: 1px solid white;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #21c1ff;
+    margin-top: -6px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+
+/*The following CSS code is not necessary for everyone*/
+
+input[type=range]::-moz-range-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #21c1ff;
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring {
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+input[type=range]::-ms-track {
+    width: 300px;
+    height: 5px;
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+    /*remove default tick marks*/
+    color: transparent;
+    z-index: -4;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+}
+
+input[type=range]::-ms-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #21c1ff;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #888;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #ccc;
+}
+/* half star */
+#half-stars-example .rating-group {
+display: inline-flex;
+}
+#half-stars-example .rating__icon {
+pointer-events: none;
+}
+#half-stars-example .rating__input {
+position: absolute !important;
+left: -9999px !important;
+}
+#half-stars-example .rating__label {
+cursor: pointer;
+/* if you change the left/right padding, update the margin-right property of .rating__label--half as well. */
+padding: 0 0.1em;
+font-size: 2rem;
+}
+#half-stars-example .rating__label--half {
+padding-right: 0;
+margin-right: -0.6em;
+z-index: 2;
+}
+#half-stars-example .rating__icon--star {
+color: orange;
+}
+#half-stars-example .rating__icon--none {
+color: #eee;
+}
+#half-stars-example .rating__input--none:checked + .rating__label .rating__icon--none {
+color: red;
+}
+#half-stars-example .rating__input:checked ~ .rating__label .rating__icon--star {
+color: #ddd;
+}
+#half-stars-example .rating-group:hover .rating__label .rating__icon--star,
+#half-stars-example .rating-group:hover .rating__label--half .rating__icon--star {
+color: orange;
+}
+#half-stars-example .rating__input:hover ~ .rating__label .rating__icon--star,
+#half-stars-example .rating__input:hover ~ .rating__label--half .rating__icon--star {
+color: #ddd;
+}
+#half-stars-example .rating-group:hover .rating__input--none:not(:hover) + .rating__label .rating__icon--none {
+color: #eee;
+}
+#half-stars-example .rating__input--none:hover + .rating__label .rating__icon--none {
+color: red;
+}
+.shop-sidebar .card{
+    padding: 1.5rem;
+}
+.shop-sidebar h2{
+    font-size: 1rem;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+}
+.shop-sidebar a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.product-filter-brand img{
+    width: 25%;
+}

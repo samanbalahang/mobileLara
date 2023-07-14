@@ -1,0 +1,252 @@
+:root {
+    --star-size: 60px;
+    --star-color: #fff;
+    --star-background: #fc0;
+}
+
+.Stars {
+    --percent: calc(var(--rating) / 5 * 100%);
+    display: inline-block;
+    font-size: var(--star-size);
+    font-family: Times;
+    line-height: 1;
+    transform: scale(0.3);
+}
+
+.Stars::before {
+    content: '★★★★★';
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, var(--star-background) var(--percent), #e8e6e6 var(--percent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.counter {
+    direction: ltr;
+    text-align: center;
+}
+
+.hover-expand {
+    width: 1rem;
+    height: 1rem;
+    overflow: hidden;
+    margin: auto;
+    box-shadow: 1px 1px 3px black;
+    padding: 1.5rem 1rem 1rem 2rem;
+    border-radius: 50rem;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+}
+
+.f-18 {
+    font-size: 1.8rem;
+}
+
+.hover-expand .icon,
+.hover-expand .text {
+    width: 100%;
+    cursor: pointer;
+}
+
+.hover-expand .icon {
+    display: block;
+
+    height: 100%;
+    padding: 1rem;
+    transform: translate(1.3rem, -1rem);
+
+}
+
+.hover-expand.active {
+    width: 100%;
+}
+
+.light-box-modal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.light-box-modal img {
+    width: auto;
+    max-height: 100%;
+}
+
+.closeModal {
+    padding: 1.5rem;
+    background-color: white;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+.sells {
+    background-color: #F8F8F8;
+    padding: 1rem;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.sells::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: red;
+    bottom: 1.5rem;
+    right: 0rem;
+
+}
+
+.garaanty {
+    background-color: #F8F8F8;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.garaanty ul {
+    list-style: none;
+}
+
+.garaanty li {
+    line-height: 2rem;
+}
+
+input[type="number"] {
+    text-align: center;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+.new-price {
+    color: green;
+    font-weight: bold;
+}
+
+.addtobasket {
+    border: 3px dashed #bcbcbc;
+    border-radius: 10px;
+}
+
+.slide {
+    width: 100%;
+    height: 1rem;
+    box-shadow: 1px 1px black;
+    border-radius: 50rem;
+}
+
+.describ-title a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    position: relative;
+
+}
+
+.describ-title a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: red;
+    bottom: 0;
+    right: 0;
+    display: block;
+    transition: 1s;
+}
+
+.describ-title a:hover {
+    color: red;
+}
+
+.describ-title a:hover::after {
+    width: 100%;
+}
+
+#full-stars-example {
+    position: relative;
+    width: 100%;
+}
+
+#full-stars-example .rating-group {
+    display: inline-flex;
+    overflow: hidden;
+}
+
+#full-stars-example .rating__icon {
+    pointer-events: none;
+}
+
+#full-stars-example .rating__input {
+    position: absolute !important;
+    /* left: -9999px !important; */
+    visibility: hidden;
+}
+
+#full-stars-example .rating__label {
+    cursor: pointer;
+    padding: 0 0.1em;
+    font-size: 2rem;
+}
+
+#full-stars-example .rating__icon--star {
+    color: orange;
+}
+
+#full-stars-example .rating__icon--none {
+    color: #eee;
+}
+
+#full-stars-example .rating__input--none:checked+.rating__label .rating__icon--none {
+    color: red;
+}
+
+#full-stars-example .rating__input:checked~.rating__label .rating__icon--star {
+    color: #ddd;
+}
+
+#full-stars-example .rating-group:hover .rating__label .rating__icon--star {
+    color: orange;
+}
+
+#full-stars-example .rating__input:hover~.rating__label .rating__icon--star {
+    color: #ddd;
+}
+
+#full-stars-example .rating-group:hover .rating__input--none:not(:hover)+.rating__label .rating__icon--none {
+    color: #eee;
+}
+
+#full-stars-example .rating__input--none:hover+.rating__label .rating__icon--none {
+    color: red;
+}
+.avatar{
+    width: 3rem;
+    border-radius: 50rem;
+}
+.oter-product h2{
+    text-align: center;
+    border-bottom:2px solid red ;
+    width: 30rem;
+    margin: auto;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+}

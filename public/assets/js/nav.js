@@ -1,0 +1,12 @@
+$(function(){
+    $("header>nav>ul>li>ul>li:not(:first-child)").hover(function(e){
+        if(!$("header>nav>ul>li>ul>li:first-child").hasClass("onactive")){
+             $("header>nav>ul>li>ul>li:first-child").addClass("onactive");
+        }
+    });
+    $("header>nav>ul>li").hover(function(){
+        if($("header>nav>ul>li>ul>li:first-child").hasClass("onactive")){
+            $("header>nav>ul>li>ul>li:first-child").removeClass("onactive");
+       }
+    });
+})

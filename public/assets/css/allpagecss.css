@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'num';
+    src: url('fonts/IranSansNum.ttf') format('truetype');
+}
+
+body {
+    background-color: #fbfbfb;
+}
+p{
+    text-align: justify;
+}
+[lang=fa-IR] span{
+    direction: rtl !important;
+    unicode-bidi: isolate;
+}
+
+.old-price{
+    color: gray;
+    text-decoration: line-through;
+}
+
+img{
+    width: 100%;
+}
+
+select span,select option,.select2-results{
+    font-size: 0.8rem;
+}
+
+.row>section,
+section {
+    margin-top: 1.5rem;
+}
+.nolink a{
+    text-decoration: none;
+    color: inherit;
+}
+.nolink a.active{
+    font-weight: bold;
+}
+.product-card-text{
+    padding: 1rem;
+}
+.col-md-20-persent{
+    width: 20%;
+}
+footer {
+    background: rgb(49, 49, 49);
+    color: #cccccc;
+    padding: 2rem 0 0 0;
+    text-align: center;
+}
+
+footer p {
+    text-align: justify;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    line-height: 2rem;
+}
+
+footer .social-ico {
+    display: inline-block;
+    width: 116px;
+    height: 122px;
+}
+
+footer .facebook {
+    background: url(../images/social3d-1.png);
+    background-position: 1px 1px;
+    background-size: 54rem;
+}
+
+footer .instaa {
+    background: url(../images/social3d-1.png);
+    background-position: -149px 0px;
+    background-size: 54rem;
+}
+
+footer .whatsapp {
+    background: url(../images/social3d-1.png);
+    background-position: 116px 1px;
+    background-size: 54rem;
+}
+
+footer .youtube {
+    background: url(../images/social3d-1.png);
+    background-position: 266px 1px;
+    background-size: 54rem;
+}
+
+footer .namad1 {
+    background: url(../images/namadha.png);
+    background-position: -2px 1px;
+    background-size: 55rem;
+}
+
+footer .namad2 {
+    background: url(../images/namadha.png);
+    background-position: -152px 1px;
+    background-size: 55rem;
+}
+
+footer .bank1 {
+    background: url(../images/namadha.png);
+    background-position: -306px 1px;
+    background-size: 55rem;
+}
+
+footer .bank2 {
+    background: url(../images/namadha.png);
+    background-position: -456px 1px;
+    background-size: 55rem;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+.slogon {
+    padding: 1rem;
+    font-size: var(--font12);
+    background: #1a1a1a;
+}
+footer img{
+    width: 100px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    nav#supermenu>ul>li:nth-child(2){
+        width: 12rem;
+   
+    }
+    nav#supermenu>ul>li:nth-child(3){
+        width: 50%;
+        margin-right: auto;
+    }
+    nav#supermenu>ul>li:nth-child(4){
+        width: 12rem;
+    }
+
+    .swiper-slide{
+        padding: 0 3rem;
+    }
+    #slider .swiper-slide,.circledProduct .swiper-slide,.special  .swiper-slide{
+        padding: 0;
+    }
+    nav#supermenu>ul>li:last-child{
+        width: 9rem;
+    }
+    .w-md-25 {
+        width: 25% !important;
+    }
+    footer {
+        background: rgb(49, 49, 49);
+        color: #cccccc;
+        /* padding: 5rem 0 0 0; */
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    footer .social-ico {
+        display: inline-block;
+        width: 63px;
+        height: 60px;
+    }
+    .w-md-50{
+        width: 50% !important;
+    }
+    footer .facebook {
+        background: url(../images/social3d-1.png);
+        background-position: 1px 1px;
+        background-size: 23rem;
+    }
+
+    footer .instaa {
+        background: url(../images/social3d-1.png);
+        background-position: -54px 0px;
+        background-size: 23rem;
+    }
+
+    footer .whatsapp {
+        background: url(../images/social3d-1.png);
+        background-position: -305px 1px;
+        background-size: 23rem;
+    }
+
+    footer .youtube {
+        background: url(../images/social3d-1.png);
+        background-position: -242px 1px;
+        background-size: 23rem;
+    }
+
+    footer .namad1 {
+        background: url(../images/namadha.png);
+        background-position: 0px 1px;
+        background-size: 26rem;
+    }
+
+    footer .namad2 {
+        background: url(../images/namadha.png);
+        background-position: -64px 1px;
+        background-size: 26rem;
+    }
+
+    footer .bank1 {
+        background: url(../images/namadha.png);
+        background-position: -141px 1px;
+        background-size: 26rem;
+    }
+
+    footer .bank2 {
+        background: url(../images/namadha.png);
+        background-position: -210px 1px;
+        background-size: 26rem;
+    }
+    #mainmenu a{
+       padding: 1.55rem;
+    }
+}
